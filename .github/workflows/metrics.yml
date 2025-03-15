@@ -22,9 +22,10 @@ jobs:
           config_timezone: Europe/Moscow
           plugin_activity: yes
           plugin_activity_days: 14
-          plugin_activity_filter: all
+          plugin_activity_filter: issue, pr, review, push
           plugin_activity_limit: 5
           plugin_activity_load: 300
+          plugin_activity_skipped: ApostolFet/*
           plugin_activity_visibility: public
           plugin_notable: yes
           plugin_notable_filter: stars:>300
