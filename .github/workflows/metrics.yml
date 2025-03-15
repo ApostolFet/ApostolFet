@@ -18,12 +18,18 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: header, activity, repositories, metadata
+          base: activity, metadata
           config_timezone: Europe/Moscow
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: public
           plugin_notable: yes
-          plugin_notable_filter: stars:>500
+          plugin_notable_filter: stars:>300
           plugin_notable_from: all
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
-          plugin_notable_types: commit, issue, pr
+          plugin_notable_types: commit,pull_request,issue
           repositories_forks: yes
