@@ -27,6 +27,9 @@ jobs:
           plugin_activity_load: 300
           plugin_activity_skipped: ApostolFet/*
           plugin_activity_visibility: public
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_followup_sections: user
           plugin_notable: yes
           plugin_notable_filter: stars:>300
           plugin_notable_from: all
