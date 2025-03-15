@@ -19,6 +19,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
           base: activity, metadata
+          config_display: large
           config_timezone: Europe/Moscow
           plugin_activity: yes
           plugin_activity_days: 14
