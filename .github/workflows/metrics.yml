@@ -25,7 +25,9 @@ jobs:
           plugin_activity_filter: issue, pr, review
           plugin_activity_limit: 5
           plugin_activity_load: 300
-          plugin_activity_skipped: ApostolFet/*
+          plugin_activity_skipped: |
+            @use.patterns
+            ApostolFet/*
           plugin_activity_visibility: public
           plugin_followup: yes
           plugin_followup_indepth: yes
