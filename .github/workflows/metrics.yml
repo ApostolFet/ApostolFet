@@ -20,20 +20,11 @@ jobs:
           template: classic
           base: activity, metadata
           config_timezone: Europe/Moscow
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: issue, pr, review
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_skipped: |
-            @use.patterns
-            ApostolFet/*
-          plugin_activity_visibility: public
           plugin_followup: yes
           plugin_followup_indepth: yes
           plugin_followup_sections: user
           plugin_notable: yes
-          plugin_notable_filter: stars:>300
+          plugin_notable_filter: stars:>275
           plugin_notable_from: all
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
